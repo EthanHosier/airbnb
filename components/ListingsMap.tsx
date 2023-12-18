@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { memo } from 'react'
 import { Marker, PROVIDER_GOOGLE } from 'react-native-maps'
 import { defaultStyles } from '@/constants/Styles'
 import { useRouter } from 'expo-router'
@@ -16,7 +16,7 @@ const INITIAL_REGION = {
   longitudeDelta: 9,
 }
 
-const ListingsMap = ({ listings }: ListingsMapProps) => {
+const ListingsMap = memo(({ listings }: ListingsMapProps) => {
   const router = useRouter();
 
   const onMarkerSelected = (item: any) => {
@@ -82,7 +82,7 @@ const ListingsMap = ({ listings }: ListingsMapProps) => {
 
     </View>
   )
-}
+})
 
 export default ListingsMap
 
