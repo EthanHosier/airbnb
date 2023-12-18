@@ -1,7 +1,5 @@
 # Airbnb Clone: React Native, Expo, Clerk Auth, Reanimated
 
-[https://trello-clone-alpha-hazel.vercel.app/](https://trello-clone-alpha-hazel.vercel.app/)
-
 Key Features:
 - Auth 
 - Sign-in with Apple and Google
