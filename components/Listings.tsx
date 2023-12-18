@@ -22,7 +22,7 @@ const Listings = ({ listings: items, category, refresh }: ListingsProps) => {
   }, [refresh])
 
   useEffect(() => {
-    console.log("reload listings");
+    //console.log("reload listings");
     setLoading(true)
 
     setTimeout(() => {
