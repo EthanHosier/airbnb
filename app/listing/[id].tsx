@@ -126,6 +126,8 @@ const Page = () => {
                     <Text style={styles.description}>{listing.description}</Text>
                 </View>
             </Animated.ScrollView>
+
+            {/* Footer */}
             <Animated.View style={defaultStyles.footer} entering={SlideInDown.delay(200)}>
                 <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                     <TouchableOpacity style={styles.footerText}>
